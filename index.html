@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Style css here -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Daisy UI CDN link here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Font awesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header part html start -->
+    <header class="header-area bg-[#F6EBDA] pb-96">
+      <div class="background-img-coffie">
+        <img src="images/bg_img_hero (1).svg" alt="" />
+      </div>
+      <nav class="container mx-auto">
+        <div class="navbar pt-5">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">
+              <img src="images/logo_coffe (1).svg" alt="" />
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="color-orange"><a>About us</a></li>
+              <li></li>
+              <li><a>Our product</a></li>
+              <li><a>Delivary</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div
+              class="flex items-center bg-white py-2 px-4 rounded-full shadow-lg w-64 z-[92]"
+            >
+              <svg
+                class="w-5 h-5 text-black"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"
+                ></path>
+              </svg>
+              <input
+                type="text"
+                placeholder="Cappuccino"
+                class="ml-2 border-none outline-none text-gray-500 bg-transparent w-full"
+              />
+            </div>
+
+            <i class="fa-solid fa-cart-shopping nav-cart"></i>
+            <div class="nav-cart-point"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="banner-area">
+        <div class="banner container mx-auto flex">
+          <div class="banner-text">
+            <h2
+              class="banner-heading text-5xl font-semibold mt-32 leading-[80px] text-[#2F2105]"
+            >
+              Enjoy your <span class="color-orange">coffee</span> <br />
+              before your activity
+            </h2>
+            <p class="text-[ #7E7D7A] font-[Poppins] text-xl mt-6">
+              Boost your productivity and build your <br />
+              mood with a glass of coffee in the morning
+            </p>
+            <button
+              class="btn bg-[#2F2105] text-white px-24 py-8 rounded-full mt-8 text-xl"
+            >
+              Order now
+              <span class="banner-text-btn"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+            </button>
+          </div>
+          <div class="banner-img">
+            <img
+              class="ms-52 mt-8"
+              src="images/img-hero.png"
+              alt="banner img"
+              width="500"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header part html end -->
+    <main class="">
+      <div class="populer-card-area container mx-auto ">
+        <div class="populer-card mt-[-350px]">
+          <div class="populer-head">
+            <h2 class="text-4xl font-semibold populer">Popular Now</h2>
+          </div>
+          <div class="populer-card-items">
+            <!-- Populer Card Item -01 -->
+            <div class="populer-card-item1 flex justify-between ml-8 mt-16 ">
+              <div class="card w-96 shadow-sm border-orange-100 border-4 bg-white">
+                <figure class="px-5 pt-5">
+                  <img
+                    src="images/popoler-item1.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2
+                    class="flex justify-between text-2xl font-semibold mt-3 mb-5"
+                  >
+                    Vanilla Latte <span>21 K</span>
+                  </h2>
+                  <p class="flex justify-between m-3">
+                    <span
+                      ><span
+                        class="border border-color-orange text-[#FF902B] mr-3 p-2"
+                        >Hot</span
+                      ><span
+                        class="border border-color-orange text-[#FF902B] mr-3 p-2 opacity-50"
+                        >cold</span
+                      ></span
+                    >
+                    <span class="card-item-cart"
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <!-- Populer Card Item -02 -->
+              <div class="card w-96 shadow-sm border-orange-100 border-4 bg-white">
+                <figure class="px-5 pt-5">
+                  <img
+                    src="images/popoler-item1.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2
+                    class="flex justify-between text-2xl font-semibold mt-3 mb-5"
+                  >
+                    Espresso <span>12K</span>
+                  </h2>
+                  <p class="flex justify-between m-3">
+                    <span
+                      ><span
+                        class="border border-color-orange text-[#FF902B] mr-3 p-2"
+                        >Hot</span
+                      ><span
+                        class="border border-color-orange text-[#FF902B] mr-3 p-2 opacity-50"
+                        >cold</span
+                      ></span
+                    >
+                    <span class="card-item-cart"
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <!-- Populer Card Item -03 -->
+              <div class="card w-96 shadow-sm border-orange-100 border-4 bg-white">
+                <figure class="px-5 pt-5">
+                  <img
+                    src="images/popoler-item1.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2
+                    class="flex justify-between text-2xl font-semibold mt-3 mb-5"
+                  >
+                    Hazelnut Latte <span>23 K</span>
+                  </h2>
+                  <p class="flex justify-between m-3">
+                    <span
+                      ><span
+                        class="border border-color-orange text-[#FF902B] mr-3 p-2"
+                        >Hot</span
+                      ><span
+                        class="border border-color-orange text-[#FF902B] mr-3 p-2 opacity-50"
+                        >cold</span
+                      ></span
+                    >
+                    <span class="card-item-cart"
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="populer-card-bg"></div>
+      <div class="populer-bg-coffieBean"></div>
+
+      <!-- How to use delivery service part start -->
+       <section>
+        <div class="delivery-head mt-[-300px]">
+          <h2 class="text-4xl font-semibold mt-20 mb-9 delivery-line">How to use delivery service</h2>
+        </div>
+        <div class="delivery-body mb-20">
+          <div class="delivery-items flex justify-between">
+            <!-- Card 01 -->
+            <div class="card bg-base-100 w-96 shadow-sm">
+              <figure class="px-10 pt-10">
+                <img
+                  src="images/image.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">choose your coffee</h2>
+                <p>there are 20+ coffees for you</p>
+             
+              </div>
+            </div>
+            <!-- Card 02 -->
+            <div class="card bg-base-100 w-96 shadow-sm">
+              <figure class="px-10 pt-10">
+                <img
+                  src="images/food-truck 1.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">we delivery it to you</h2>
+                <p>Choose delivery service</p>
+          
+              </div>
+            </div>
+            <!-- Card 03 -->
+            <div class="card bg-base-100 w-96 shadow-sm">
+              <figure class="px-10 pt-10">
+                <img
+                  src="images/coffee-cup 2.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Enjoy your coffee</h2>
+                <p>Choose delivery service</p>
+             
+              </div>
+            </div>
+  
+
+          </div>
+        </div>
+       </section>
+      <!-- How to use delivery service part end -->
+       <!-- About part html start -->
+        <section class="about-part px-20 py-10 mb-20 mt-56 relative">
+          <div class="about-text ml-[600px] ">
+            <h2 class="text-4xl font-semibold mb-5 about-line">About us</h2>
+            <h3 class="text-2xl font-semibold mb-5">We provide quality coffee, <br> and ready to deliver.</h3>
+            <p class="text-xl">We are a company that makes and distributes <br> delicious drinks. our main product is made with a <br> secret recipe and available in stores worldwide.</p>
+            
+            <button class="btn bg-[#2F2105] text-[#ff902b] px-24 py-8 rounded-full mt-8 text-xl">Get your coffee</button>
+          </div>
+          <img class="absolute top-[-150px] left-[150px]" src="images/Group6.png" alt="">
+        </section>
+       <!-- About part html end -->
+        <!-- special Menu part html start -->
+         <section class="container mx-auto">
+          <div class="special-menu-head">
+            <h2 class="text-4xl font-semibold mb-10">Special menu for you</h2>
+          </div>
+          <div class="special-menu mb-12">
+            <!-- manu Items -->
+             <div class="special-menu-items">
+              <div class="grid grid-cols-3 gap-4">
+                <!-- product 01 -->
+                <div class="card w-96 drop-shadow-lg border-orange-100 border-4 bg-white">
+                  <figure class="px-5 pt-5">
+                    <img
+                      src="images/img_product (3).png"
+                      alt="Shoes"
+                      class="rounded-xl"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="flex justify-between text-2xl font-semibold mt-3 mb-5"
+                    >
+                    Sandwich <span>21 K</span>
+                    </h2>
+                    <p class="flex justify-between">
+                      <span>bread with meat and <br> vegetables</span>
+                      <span class="card-item-cart"
+                        ><i class="fa-solid fa-cart-shopping"></i
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <!-- product 02 -->
+                <div class="card w-96 drop-shadow-lg border-orange-100 border-4 bg-white">
+                  <figure class="px-5 pt-5">
+                    <img
+                      src="images/hot-mil.png"
+                      alt="Shoes"
+                      class="rounded-xl"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="flex justify-between text-2xl font-semibold mt-3 mb-5"
+                    >
+                    Hot Milk <span>21 K</span>
+                    </h2>
+                    <p class="flex justify-between">
+                      <span>Hot Milk with less <br> sugar</span>
+                      <span class="card-item-cart"
+                        ><i class="fa-solid fa-cart-shopping"></i
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <!-- product 03 -->
+                <div class="card w-96 drop-shadow-lg border-orange-100 border-4 bg-white">
+                  <figure class="px-5 pt-5">
+                    <img
+                      src="images/coffie-ice.png"
+                      alt="Shoes"
+                      class="rounded-xl"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="flex justify-between text-2xl font-semibold mt-3 mb-5"
+                    >
+                    Coffe Ice Cream <span>21 K</span>
+                    </h2>
+                    <p class="flex justify-between">
+                      <span>Coffe with ice cream  <br> vanilla</span>
+                      <span class="card-item-cart"
+                        ><i class="fa-solid fa-cart-shopping"></i
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <!-- product 04 -->
+                <div class="card w-96 drop-shadow-lg border-orange-100 border-4 bg-white">
+                  <figure class="px-5 pt-5">
+                    <img
+                      src="images/hot-mil.png"
+                      alt="Shoes"
+                      class="rounded-xl"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="flex justify-between text-2xl font-semibold mt-3 mb-5"
+                    >
+                    Cappucino <span>21 K</span>
+                    </h2>
+                    <p class="flex justify-between">
+                      <span>Hot Cappucino</span>
+                      <span class="card-item-cart"
+                        ><i class="fa-solid fa-cart-shopping"></i
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <!-- product 05 -->
+                <div class="card w-96 drop-shadow-lg border-orange-100 border-4 bg-white">
+                  <figure class="px-5 pt-5">
+                    <img
+                      src="images/moccanino.png"
+                      alt="Shoes"
+                      class="rounded-xl"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="flex justify-between text-2xl font-semibold mt-3 mb-5"
+                    >
+                    Moccacinno <span>21 K</span>
+                    </h2>
+                    <p class="flex justify-between">
+                      <span>Hot Moccacino </span>
+                      <span class="card-item-cart"
+                        ><i class="fa-solid fa-cart-shopping"></i
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <!-- product 06 -->
+                <div class="card w-96 drop-shadow-lg border-orange-100 border-4 bg-white">
+                  <figure class="px-5 pt-5">
+                    <img
+                      src="images/waffle-ice.png"
+                      alt="Shoes"
+                      class="rounded-xl"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="flex justify-between text-2xl font-semibold mt-3 mb-5"
+                    >
+                    Waffle Ice Crem <span>21 K</span>
+                    </h2>
+                    <p class="flex justify-between">
+                      <span>Wafle with Ice cream</span>
+                      <span class="card-item-cart"
+                        ><i class="fa-solid fa-cart-shopping"></i
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+             </div>
+
+          </div>
+         </section>
+        <!-- special Menu part html end -->
+    </main>
+    <footer>
+      <div class="footer-head">
+        <h2 class="text-4xl font-semibold">Subscribe to get 50% discount price</h2>
+        <div
+        class="flex items-center bg-white py-2 px-4 rounded-full shadow-lg w-64 z-[92]"
+      >
+        <svg
+          class="w-5 h-5 text-black"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"
+          ></path>
+        </svg>
+        <input
+          type="text"
+          placeholder="Cappuccino"
+          class="ml-2 border-none outline-none text-gray-500 bg-transparent w-full"
+        />
+      </div>
+
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>
