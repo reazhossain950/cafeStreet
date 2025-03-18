@@ -99,6 +99,7 @@
   padding: 100px 20px;
   margin-bottom: 100px;
   text-align: center;
+  border-radius: 30px;
 }
 
 .delivery-line::after {
