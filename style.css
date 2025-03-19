@@ -129,4 +129,9 @@
 
 }
 
-
+.footer-order{
+  box-shadow: none;
+  position: absolute;
+  top: 172px;
+  left: 704px;
+}
