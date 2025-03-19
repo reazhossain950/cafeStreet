@@ -85,7 +85,7 @@
   height: 400px;
   position: relative;
   top: -300px;
-  left: 0;
+  left: 3%;
   background-color: #f9d9aa;
   z-index: 9;
   border-radius: 50px;
@@ -128,3 +128,5 @@
     right: 520px;
 
 }
+
+
